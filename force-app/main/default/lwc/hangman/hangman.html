@@ -1,0 +1,84 @@
+<template>
+    <form id="newForm">
+        <div class="c-container all">
+            <!--Title-->
+            <div class="title">
+                HANG MAN
+            </div>
+            <!--Hint-->
+            <div class="marginDiv">
+                <p>
+                    <strong>Hint: </strong>{hint}
+                </p>
+                <p>({letter} letter)</p>
+            </div>
+    
+            <!--Player-->
+            <div class="marginDiv">
+                <p>You have</p>
+                <strong class="showLives">{lives}</strong>
+                <p>lives</p>
+            </div>
+            <!--/Player-->
+    
+            <!--Answer-->
+            <div class="marginDiv">
+                <p>{result}</p>
+            </div>
+            
+            <!--BTN-->
+            <div class="btn">
+                <template for:each={Alphabet} for:item="item" >
+                    <lightning-button 
+                        key={item} 
+                        label={item} 
+                        onclick={handleClick}
+                        disabled={disabledCondition}>
+                </lightning-button>          
+                </template>
+            </div>
+    
+            <!--Show-->
+            <div>
+    
+                <!--LOSE-->
+                <template if:true={rewardFunction}>
+                    <div class="loseBg">
+                        <div class="textShow">
+                            <strong>{reward}</strong>
+                            <p>Answer is {real_ans}</p>
+                        </div>
+                        <!--play again-->
+                        <div>
+                            <lightning-button
+                                label='Play again' 
+                                onclick={handlePlayagain}
+                                >
+                            </lightning-button>
+                        </div>
+                    </div>  
+                </template>
+    
+                <!--WIN-->
+                <template if:false={rewardFunction}>
+                    <template if:true={wincheck}>
+                        <div class="winBg">
+                            <div class="textShow">
+                                <strong>{reward}</strong>
+                            </div>
+                            <!--play again-->
+                            <div>
+                                <lightning-button
+                                    label='Play again' 
+                                    onclick={handlePlayagain}
+                                    >
+                                </lightning-button>
+                            </div>
+                        </div>  
+                    </template>
+                </template>
+            </div>
+            
+        </div>
+    </form>
+</template>

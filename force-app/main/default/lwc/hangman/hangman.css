@@ -1,0 +1,62 @@
+.all {
+    text-align: center;
+}
+.title {
+    font-size: 75pt;
+}
+
+p {
+    font-size: 16pt;
+}
+
+.showLives {
+    font-size: 25pt;    
+}
+
+.marginDiv {
+    margin: 25px;
+}
+
+.btn {
+    font-size: 14pt;
+}
+
+.loseBg {
+    background: #700;
+    background: linear-gradient(rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
+    background: -webkit-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
+    background: -ms-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
+    background: -moz-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
+    background: -o-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+}
+
+.winBg {
+    background: rgb(66, 221, 27);
+    background: linear-gradient(rgba(66, 221, 27) 20%, rgba(228, 224, 224, 0.973) 80%);
+    background: -webkit-linear-gradient(top, rgba(66, 221, 27) 20%, rgba(228, 224, 224, 0.973) 80%);
+    background: -ms-linear-gradient(top, rgba(66, 221, 27) 20%, rgba(228, 224, 224, 0.973) 80%);
+    background: -moz-linear-gradient(top, rgba(66, 221, 27) 20%, rgba(228, 224, 224, 0.973) 80%);
+    background: -o-linear-gradient(top, rgba(66, 221, 27) 20%, rgba(228, 224, 224, 0.973) 80%);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.textShow {
+    margin-top: 290px;
+    color: #fff;
+    text-align: center;
+    font-size: 75pt;
+}
+
+
